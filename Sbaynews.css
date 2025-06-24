@@ -1,0 +1,904 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    
+    width: 100%;
+    height: 10%;
+}
+.header{
+    padding: 15px;
+    padding-left: 150px;
+    background-color: rgb(31, 31, 31);
+}
+.header img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.Nav{
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 90;
+    background-color: rgb(255, 59, 59);
+}
+.Nav ul{
+    height: 50px;
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+}
+.Nav ul li{
+    list-style: none;
+    
+
+}
+.Nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.697);
+    font-size: 20px;
+    display: flex;
+    margin-right: 20px;
+    font-weight: bold;
+    
+}
+.Nav ul li #Home{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+.Nav ul li a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.main{
+    width: 80%;
+    height: 95vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    display: flex;
+}
+.main .left{
+    width: 50%;
+    height: 100%;
+}
+.content1{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.content1 #cover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.content1 img{
+    width: 100%;
+    height: 100%;
+}
+.Clippy1{
+    width: 160px;
+    height: 150px;
+    color: white;
+    padding: 5px 15px;    
+    font-size: 20px;
+    top: 20px;
+    position: absolute;
+    background-color: green;
+    clip-path: polygon(0 0, 80% 0%, 100% 24%, 0 24%)
+}
+.Clippy2{
+    width: 160px;
+    height: 150px;
+    color: white;
+    padding: 5px 15px;    
+    font-size: 20px;
+    top: 20px;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    clip-path: polygon(0 0, 80% 0%, 100% 24%, 0 24%)
+}
+.Clippy3{
+    width: 160px;
+    height: 150px;
+    color: white;
+    padding: 5px 15px;    
+    font-size: 20px;
+    top: 20px;
+    position: absolute;
+    background-color: rgb(255, 0, 230);
+    clip-path: polygon(0 0, 80% 0%, 100% 24%, 0 24%)
+}
+.Clippy4{
+    width: 160px;
+    height: 150px;
+    color: white;
+    padding: 5px 15px;    
+    font-size: 20px;
+    top: 20px;
+    position: absolute;
+    background-color: rgb(166, 255, 0);
+    clip-path: polygon(0 0, 80% 0%, 100% 24%, 0 24%)
+}
+.content1 p{
+    position: absolute;
+    color: white;
+    margin-left: 15px;
+    bottom: 25px;
+    transition: 0.5s;
+} 
+.content1 #date{
+    width: 100%;
+    height: 5%;
+    color: white;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 10px;
+    /* z-index: 999; */
+}
+.content1 #Hidden-text{
+    width: 100%;
+    position: absolute;
+}
+.content1 #Hidden-text p{
+    z-index: -99;
+    bottom: -330px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    
+}
+.content1:hover #Hidden-text p{
+    z-index: 999;
+    transform: translateY(-30px);
+    transition: 0.6s;
+    opacity: 1;
+} 
+.content1:hover #cover{
+    background-color: rgba(5, 5, 5, 0.419);
+}
+
+.content1:hover p{
+    color: rgb(255, 48, 48);
+    bottom: 50px;
+    transition: 0.5s;
+}
+.Right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+.Right .right-left{
+    width: 50%;
+    height: 100%;
+}
+.content2{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.content2 #date{
+    width: 100%;
+    height: 5%;
+    color: white;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 10px;
+    /* z-index: 999; */
+}
+.content2 #Hidden-text{
+    width: 100%;
+    position: absolute;
+}
+.content2 #Hidden-text p{
+    z-index: -99;
+    bottom: -330px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+}
+.content2:hover #Hidden-text p{
+    z-index: 999;
+    transform: translateY(-30px);
+    transition: 0.6s;
+    opacity: 1;
+}
+.content2 #cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.content2:hover #cover{
+    background-color: rgba(5, 5, 5, 0.419);
+}
+.right-left .content2 p{
+    position: absolute;
+    color: white;
+    transition: 0.5s;
+    margin-left: 15px;
+    bottom: 25px;
+}
+.content2:hover p{
+    color: rgb(255, 48, 48);
+    bottom: 80px;
+    transition: 0.5s;
+}
+.right-left .content2 img{
+    width: 100%;
+    height: 100%;
+}
+.right-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right-right #top{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(146, 146, 146);
+}
+.right-right #bottom{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(146, 146, 146);
+}
+.Header-video{
+    width: 160px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 11%;
+    font-size: 20px;
+    font-weight: bold;
+    clip-path: polygon(0 0, 61% 0, 100% 100%, 0 100%);
+}
+.Body2-main{
+    width: 80%;
+    height: 80vh;
+    padding: 20px 35px;
+    margin-left: 11%;
+    border: 2px solid rgb(148, 148, 148);
+    border-top: 3px solid red;
+    background-color: rgb(255, 255, 255);
+}
+.Main2-top{
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+    gap: 10px;
+}
+.vid{
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+}
+.vid img{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    border-radius: 5px;
+}
+.vid #Cover-vid{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.vid:hover img{
+    transform: scale(0.98);
+    transition: 0.4s;   
+}
+.vid:hover #Cover-vid{
+    transition: 0.5s;
+    transform: scale(0.98);
+    opacity: 1;
+}
+.vid p{
+    height: 10%;
+    width: 100%;
+    margin-left:5px;
+    color: rgba(0, 0, 0, 0.668);
+}
+.vid:hover p{
+    color: black;
+}
+.Main2-bottom{
+    width: 80%;
+    height: 66.6%;
+    gap: 10px;
+    margin-top: 10px;
+}
+.vid-top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.vid2 #Cover-vid2{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.vid2:hover #Cover-vid2{
+    transition: 0.5s;
+    transform: scale(0.98);
+    opacity: 1;
+}
+.vid2 img{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.vid2:hover img{
+    transform: scale(0.98);
+    transition: 0.4s;   
+}
+.vid2{
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+.vid2 p{
+    height: 10%;
+    width: 100%;
+    margin-left:5px;
+    color: rgba(0, 0, 0, 0.668);
+}
+.vid2:hover p{
+    color: black;
+}
+.Main3{
+    margin-top: 15px;
+}
+.Header-komsan{
+    width: 160px;
+    height: 50px;
+    background-color: rgb(255, 50, 228);
+    color: white;
+    padding: 10px 10px;
+    margin-left: 11%;
+    font-size: 20px;
+    font-weight: bold;
+    clip-path: polygon(0 0, 61% 0, 100% 100%, 0 100%);
+}
+.Main3-body{
+    width: 80%;
+    height: 50vh;
+    margin-left: 11%;
+    display: flex;
+    border: 2px solid rgb(148, 148, 148);
+    border-top: 3px solid rgb(255, 50, 228);
+}
+.Main3-body #left{
+    width: 40%;
+    height: 100%;
+    padding: 15px 25px 0px 25px;
+}
+.Main3-body #left #content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 50, 228);
+}
+.Main3-body #left #content #img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.Main3-body #left #content #img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.Main3-body #left #content h2{
+    width: 100%;
+    height: 40%;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 13px;
+    color: white;
+    font-weight: bold;
+}
+.Main3-body #left #content #cover{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Main3-body #left:hover #content #img img{
+    transform: scale(0.95);
+    transition: 0.5s;
+}
+.Main3-body #left:hover #content #cover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(0.95);
+}
+.Main3-body #right{
+    width: 60%;
+    height: 100%;
+    padding: 15px 5px 0px 5px;
+}
+.Main3-body #right #container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.Main3-body #right #container #content{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+.Main3-body #right #container #content #img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.Main3-body #right #container #content #img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.Main3-body #right #container #content h5{
+    width: 100%;
+    height: 40%;
+    font-size: 11px;
+    padding-top: 5px;
+    color: rgb(114, 114, 114);
+    transition: 0.4s;
+    opacity: 0.8;
+}
+.Main3-body #right #container #content #cover{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Main3-body #right #container #content:hover #img img{
+    transform: scale(0.97);
+    transition: 0.5s;
+}
+.Main3-body #right #container #content:hover #cover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(0.97);
+}
+.Main3-body #right #container #content:hover h5{
+    opacity: 1;
+    color: black;
+    transition: 0.5s;
+}
+.Main4{
+    margin-top: 15px;
+}
+.Header-technology{
+    width: 180px;
+    height: 50px;
+    background-color: rgb(23, 132, 255);
+    color: white;
+    padding: 10px 10px;
+    margin-left: 11%;
+    font-size: 20px;
+    font-weight: bold;
+    clip-path: polygon(0 0, 61% 0, 100% 100%, 0 100%);
+}
+.Main4-body{
+    width: 80%;
+    height: 50vh;
+    margin-left: 11%;
+    display: flex;
+    border: 2px solid rgb(148, 148, 148);
+    border-top: 3px solid rgb(23, 132, 255);
+}
+.Main4-body #left{
+    width: 40%;
+    height: 100%;
+    padding: 15px 25px 0px 25px;
+}
+.Main4-body #left #content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23, 132, 255);
+}
+.Main4-body #left #content #img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.Main4-body #left #content #img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.Main4-body #left #content h2{
+    width: 100%;
+    height: 40%;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 13px;
+    color: white;
+    font-weight: bold;
+}
+.Main4-body #left #content #cover{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Main4-body #left:hover #content #img img{
+    transform: scale(0.95);
+    
+    transition: 0.5s;
+}
+.Main4-body #left:hover #content #cover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.Main4-body #right{
+    width: 60%;
+    height: 100%;
+    padding: 15px 5px 0px 5px;
+}
+.Main4-body #right #container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.Main4-body #right #container #content{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+.Main4-body #right #container #content #img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.Main4-body #right #container #content #img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.Main4-body #right #container #content h5{
+    width: 100%;
+    height: 40%;
+    font-size: 11px;
+    padding-top: 5px;
+    color: rgb(114, 114, 114);
+    transition: 0.4s;
+    opacity: 0.8;
+}
+.Main4-body #right #container #content #cover{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Main4-body #right #container #content:hover #img img{
+    transform: scale(0.97);
+    transition: 0.5s;
+}
+.Main4-body #right #container #content:hover #cover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.Main4-body #right #container #content:hover h5{
+    opacity: 1;
+    color: black;
+    transition: 0.5s;
+}
+.Main5{
+    margin-top: 15px;
+}
+.Header-social{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(79, 224, 101);
+    color: white;
+    padding: 10px 10px;
+    margin-left: 11%;
+    font-size: 20px;
+    font-weight: bold;
+    clip-path: polygon(0 0, 61% 0, 100% 100%, 0 100%);
+}
+.Main5-body{
+    width: 80%;
+    height: 50vh;
+    margin-left: 11%;
+    display: flex;
+    border: 2px solid rgb(148, 148, 148);
+    border-top: 3px solid rgb(79, 224, 101);
+}
+.Main5-body #left{
+    width: 40%;
+    height: 100%;
+    padding: 15px 25px 0px 25px;
+}
+.Main5-body #left #content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(79, 224, 101);
+}
+.Main5-body #left #content #img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.Main5-body #left #content #img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.Main5-body #left #content h2{
+    width: 100%;
+    height: 40%;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 13px;
+    color: white;
+    font-weight: bold;
+}
+.Main5-body #left #content #cover{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Main5-body #left:hover #content #img img{
+    transform: scale(0.95);
+    
+    transition: 0.5s;
+}
+.Main5-body #left:hover #content #cover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(0.95);
+}
+.Main5-body #right{
+    width: 60%;
+    height: 100%;
+    padding: 15px 5px 0px 5px;
+}
+.Main5-body #right #container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.Main5-body #right #container #content{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+.Main5-body #right #container #content #img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.Main5-body #right #container #content #img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.Main5-body #right #container #content h5{
+    width: 100%;
+    height: 40%;
+    font-size: 11px;
+    padding-top: 5px;
+    color: rgb(114, 114, 114);
+    transition: 0.4s;
+    opacity: 0.8;
+}
+.Main5-body #right #container #content #cover{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Main5-body #right #container #content:hover #img img{
+    transform: scale(0.97);
+    transition: 0.5s;
+}
+.Main5-body #right #container #content:hover #cover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(0.97);
+}
+.Main5-body #right #container #content:hover h5{
+    opacity: 1;
+    color: black;
+    transition: 0.5s;
+}
+.Main6{
+    margin-top: 15px;
+}
+.Header-sport{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(255, 187, 0);
+    color: white;
+    padding: 10px 10px;
+    margin-left: 11%;
+    font-size: 20px;
+    font-weight: bold;
+    clip-path: polygon(0 0, 61% 0, 100% 100%, 0 100%);
+}
+.Main6-body{
+    width: 80%;
+    height: 50vh;
+    margin-left: 11%;
+    display: flex;
+    border: 2px solid rgb(148, 148, 148);
+    border-top: 3px solid rgb(255, 187, 0);
+}
+.Main6-body #left{
+    width: 40%;
+    height: 100%;
+    padding: 15px 25px 0px 25px;
+}
+.Main6-body #left #content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 187, 0);
+}
+.Main6-body #left #content #img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.Main6-body #left #content #img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.Main6-body #left #content h2{
+    width: 100%;
+    height: 40%;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 13px;
+    color: white;
+    font-weight: bold;
+}
+.Main6-body #left #content #cover{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Main6-body #left:hover #content #img img{
+    transform: scale(0.95);
+    
+    transition: 0.5s;
+}
+.Main6-body #left:hover #content #cover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(0.95);
+}
+.Main6-body #right{
+    width: 60%;
+    height: 100%;
+    padding: 15px 5px 0px 5px;
+}
+.Main6-body #right #container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.Main6-body #right #container #content{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+.Main6-body #right #container #content #img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.Main6-body #right #container #content #img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.4s;
+}
+.Main6-body #right #container #content h5{
+    width: 100%;
+    height: 40%;
+    font-size: 11px;
+    padding-top: 5px;
+    color: rgb(114, 114, 114);
+    transition: 0.4s;
+    opacity: 0.8;
+}
+.Main6-body #right #container #content #cover{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.481) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Main6-body #right #container #content:hover #img img{
+    transform: scale(0.97);
+    transition: 0.5s;
+}
+.Main6-body #right #container #content:hover #cover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: scale(0.97);
+}
+.Main6-body #right #container #content:hover h5{
+    opacity: 1;
+    color: black;
+    transition: 0.5s;
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    margin-top: 20px;
+    background-color: black;
+}
