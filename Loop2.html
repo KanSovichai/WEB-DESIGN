@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let N = parseInt(prompt("Enter in the number : ")),result = 0;
+    let op = ""
+    for(let i = 2; i <= N; i+=2){
+        if(op != ""){
+            op+=" + ";
+        }
+        op+=i;
+        result+=i;
+    }
+    document.write("<br>"+op + " = "+ result);
+    let n = parseInt(prompt("Enter in the number : "));
+    op = ""
+    result = 0;
+    for(let i = n; i >= 1; i+=-1){
+        if(op != ""){
+            op+=" + ";
+        }
+        op+=i;
+        result*=i;
+    }
+    document.write("<br>" + op + " = "+ result);
+    //calculate the sum of cos()
+    let x = parseInt(prompt("Enter in the number : "));
+    op = ""
+    result = 0;
+    for(let i = 1; i <= x; i++){
+        if(op != ""){
+            op+=" + ";
+        }
+        
+        op+="cos("+i+")";
+        result+=Math.cos(i);
+    }
+    document.write("<br>" + op + " = "+ result);
+    // return (i%2 == 0) ? "Even" : "Odd";
+</script>
+<body>
+    
+</body>
+</html>

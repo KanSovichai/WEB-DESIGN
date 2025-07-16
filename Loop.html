@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<script>
+		let i = 1,result = 0,op = "";
+		for(i=2;i<=6;i++){
+		     if(i % 2 == 0){
+		         result = result + i;
+		         if(op != ""){
+		            op += " + ";
+		         }
+		         op+=i;
+		     }
+		}
+        document.write(op + " = " + result);
+		document.write("\n\n");
+		
+	</script>
+	<body></body>
+</html>
