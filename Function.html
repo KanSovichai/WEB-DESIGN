@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //there are two type of function
+    function Sum(a,b){
+        return a + b;
+    }
+    function Substract(a,b){
+        return a - b;
+    }
+    //function can be called by using the name
+    function Add(){
+        let a= 10;
+        let b= 20;
+        return a + b; 
+    }
+    function Multiply(){
+        let a=1,b=2;
+        return a * b;
+    }
+    document.write(Sum(10,20));
+    document.write(Substract(10,20));
+    //reusable
+    function Name(name){
+        document.writeln(""+name+"");
+    }
+    Name("John");
+    Name("Tom");
+    Name("Peter");
+</script>
+<body>
+    
+</body>
+</html>
