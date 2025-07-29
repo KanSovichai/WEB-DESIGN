@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.box {
+				width: 100vw;
+				height: 30vh;
+				display: flex;
+				flex-direction: column;
+			}
+			.box svg {
+				width: 40px;
+				height: 40px;
+			}
+			.box #bttn {
+				width: 60px;
+				height: 60px;
+				border: none;
+			}
+			.box #bttn:hover {
+				background-color: rgb(188, 188, 188);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+			>
+				<path
+					fill="currentColor"
+					d="M21.008 3c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H2.992A.993.993 0 0 1 2 20.007V3.993A1 1 0 0 1 2.992 3zM20 5H4v14h16zm-2 10v2H6v-2zm-6-8v6H6V7zm6 4v2h-4v-2zm-8-2H8v2h2zm8-2v2h-4V7z"
+				/>
+			</svg>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+			>
+				<path
+					fill="currentColor"
+					d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"
+				/>
+			</svg>
+			<div id="hide">
+				<div style="display: flex; flex-direction: column">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							d="M18 4H6c-1.105 0-2.026.91-1.753 1.98a8.02 8.02 0 0 0 4.298 5.238c.823.394 1.455 1.168 1.455 2.08v6.084a1 1 0 0 0 1.447.894l2-1a1 1 0 0 0 .553-.894v-5.084c0-.912.632-1.686 1.454-2.08a8.02 8.02 0 0 0 4.3-5.238C20.025 4.91 19.103 4 18 4z"
+						/>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="48"
+						height="48"
+						viewBox="0 0 48 48"
+					>
+						<g
+							fill="none"
+							stroke="currentColor"
+							stroke-linejoin="round"
+							stroke-width="4"
+						>
+							<path
+								d="M36.686 15.171a15.4 15.4 0 0 1 2.529 6.102H44v5.454h-4.785a15.4 15.4 0 0 1-2.529 6.102l3.385 3.385l-3.857 3.857l-3.385-3.385a15.4 15.4 0 0 1-6.102 2.529V44h-5.454v-4.785a15.4 15.4 0 0 1-6.102-2.529l-3.385 3.385l-3.857-3.857l3.385-3.385a15.4 15.4 0 0 1-2.529-6.102H4v-5.454h4.785a15.4 15.4 0 0 1 2.529-6.102l-3.385-3.385l3.857-3.857l3.385 3.385a15.4 15.4 0 0 1 6.102-2.529V4h5.454v4.785a15.4 15.4 0 0 1 6.102 2.529l3.385-3.385l3.857 3.857z"
+							/>
+							<path d="M24 29a5 5 0 1 0 0-10a5 5 0 0 0 0 10Z" />
+						</g>
+					</svg>
+				</div>
+			</div>
+			<button type="button" id="bttn" onclick="show()">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="512"
+					height="512"
+					viewBox="0 0 512 512"
+				>
+					<path
+						fill="currentColor"
+						d="M149.333 234.666v42.667h-42.666v-42.667zm85.334 0v42.667H192v-42.667zm85.333 0v42.667h-42.667v-42.667zm85.333 0v42.667h-42.666v-42.667z"
+					/>
+				</svg>
+			</button>
+		</div>
+	</body>
+	<script>
+		let check = true;
+		function show() {
+			if (check) {
+				document.getElementById("hide").style.display = "none";
+			} else {
+				document.getElementById("hide").style.display = "block";
+			}
+			check = !check;
+		}
+	</script>
+</html>
